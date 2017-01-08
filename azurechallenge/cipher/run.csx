@@ -40,6 +40,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
     return req.CreateResponse(HttpStatusCode.OK, response);
 }
 
+// Stolen from StackOverflow
 public static IEnumerable<string> SplitByLength(this string str, int maxLength)
 {
     for (int index = 0; index < str.Length; index += maxLength)
